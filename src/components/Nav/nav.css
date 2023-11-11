@@ -1,0 +1,9 @@
+/* navbar */
+.navbar-brand {
+    color: var(--navbar)!important;
+}
+
+.nav-link {
+    color: var(--navbar) !important;
+    text-decoration: none;
+}
