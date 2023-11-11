@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import navLogo from '../../assets/logo-white-thick.png'
+import navLogo from '../../../images/velaris.jpeg'
 
 function Navigation() {
   const current = useLocation();
