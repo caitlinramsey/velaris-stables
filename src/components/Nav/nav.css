@@ -1,9 +1,14 @@
-/* navbar */
-.navbar-brand {
-    color: var(--navbar)!important;
+.navbar-nav {
+    margin: auto;
+    display: block;
+}
+
+.navbar-toggler {
+    margin: auto;
 }
 
 .nav-link {
     color: var(--navbar) !important;
     text-decoration: none;
+    margin: auto;
 }

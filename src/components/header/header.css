@@ -1,0 +1,8 @@
+.navbar-brand {
+    display: flex;
+}
+
+.main-title {
+    align-items: center;
+    display: flex;
+}

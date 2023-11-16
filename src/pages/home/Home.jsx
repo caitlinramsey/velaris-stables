@@ -5,7 +5,7 @@ export default function Home() {
         <>
             <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Velaris Stables</a>
+                    <a class="navbar-brand" href="#"></a>
                 </div>
             </nav>
 
