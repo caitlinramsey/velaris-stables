@@ -8,7 +8,7 @@ function App() {
     <>
     <Header />
       <Navigation />
-      <main className='mx-3'>
+      <main>
         <Outlet />
         {/* <Footer /> */}
       </main>

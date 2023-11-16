@@ -11,4 +11,5 @@
     color: var(--navbar) !important;
     text-decoration: none;
     margin: auto;
+    font-size: 20px;
 }

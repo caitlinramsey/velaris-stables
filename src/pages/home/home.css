@@ -1,13 +1,12 @@
 :root {
     --picture-text: white;
 }
-
 /* hero background image */
 .bgimage {
-    height:100vh;
+    height: 100vh;
     background: url('images/svenhero.jpg');
-    background-size:cover;
-    position:relative;
+    background-size: cover;
+    position: relative;
     opacity: .9;
 }
 /* text css above hero image*/
@@ -27,7 +26,6 @@
     color: var(--picture-text);
 }
 
-
 .hero-text h2 {
     color: #fff;
     font-family: monospace;
@@ -36,7 +34,7 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .03em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(30, end),
+      typing 4s steps(30, end),
       blink-caret .5s step-end infinite;
   }
   
