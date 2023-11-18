@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-// import navLogo from '../../../images/velaris.png'
 
 function Navigation() {
   const current = useLocation();
@@ -20,35 +19,35 @@ function Navigation() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>
               <Nav.Link
-                href="/"
+                to="/"
                 onClick={() => handlePageChange("Home")}
                 className={currentPage === "Home" ? "active" : "nav-link"}
               >
                 Home
               </Nav.Link>
               <Nav.Link
-                href="/About"
+                to="/About"
                 onClick={() => handlePageChange("About")}
                 className={currentPage === "About" ? "active" : "nav-link"}
               >
                 About
               </Nav.Link>
               <Nav.Link
-                href="/Boarding"
+                to="/Boarding"
                 onClick={() => handlePageChange("Boarding")}
                 className={currentPage === "Boarding" ? "active" : "nav-link"}
               >
                 Boarding
               </Nav.Link>
               <Nav.Link
-                href="/Lessons"
+                to="/Lessons"
                 onClick={() => handlePageChange("Lessons")}
                 className={currentPage === "Lessons" ? "active" : "nav-link"}
               >
                 Lessons
               </Nav.Link>
               <Nav.Link
-                href="/Contact"
+                to="/Contact"
                 onClick={() => handlePageChange("Contact")}
                 className={currentPage === "Contact" ? "active" : "nav-link"}
               >
