@@ -43,3 +43,9 @@
     from { width: 0 }
     to { width: 100% }
   }
+
+  /* @media screen and (max-width: 1200px) {
+    .hero-text h2 {
+        max-width: 70vw;
+    }
+  } */
