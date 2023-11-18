@@ -13,3 +13,6 @@ This responsive mock website was built with [React](https://react.dev/) and depl
 
 ## GitHub
 The github repository for this webite can be found [here](https://github.com/caitlinramsey/velaris-stables).
+
+## Deployed Application
+The deployed website can be found [here](https://velaris-stables.netlify.app).
