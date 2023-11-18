@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Navigation from './components/nav/Nav';
+import Nav from './components/nav/Nav';
 import Header from './components/header/Header';
 // import Footer from './components/footer/Footer'
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Header />
-      <Navigation />
+      <Nav />
       <main>
         <Outlet />
         {/* <Footer /> */}
