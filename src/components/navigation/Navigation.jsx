@@ -1,11 +1,11 @@
-import "./nav.css";
+import "./navigation.css";
 import { useLocation } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import navLogo from '../../../images/velaris.png'
 
-function Nav() {
+function Navigation() {
   const current = useLocation();
 
   const currentPage = current.pathname === '/' ? 'Home' : current.pathname.slice(1);
@@ -62,4 +62,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navigation;
