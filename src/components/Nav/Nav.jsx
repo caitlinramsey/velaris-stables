@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import navLogo from '../../../images/velaris.png'
 
-function Navigation() {
+function Nav() {
   const current = useLocation();
 
   const currentPage = current.pathname === '/' ? 'Home' : current.pathname.slice(1);
@@ -62,4 +62,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default Nav;
