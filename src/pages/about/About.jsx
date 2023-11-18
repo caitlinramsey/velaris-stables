@@ -5,14 +5,14 @@ import './about.css';
 function About() {
     return (
         <section id="about">
-            <div class="container mt-4 pt-4">
-                <h1 class="text-center">About Velaris Stables</h1>
-                <div class="row mt-4">
-                    <div class="col-lg-4">
-                        <img src="images/about.jpeg" class="imageAboutPage" alt=""></img>
+            <div className="container mt-4 pt-4">
+                <h1 className="text-center">About Velaris Stables</h1>
+                <div className="row mt-4">
+                    <div className="col-lg-4">
+                        <img src="images/about.jpeg" className="imageAboutPage" alt=""></img>
                     </div>
 
-                    <div class="col-lg-8">
+                    <div className="col-lg-8">
                         <p> Velaris Stables is a 100 acre facility with some wonderful amenities for you and your horse. The facility boasts a state of the art 100x200 indoor arena with rubber footing as well as a 200x300 outdoor arena with the same footing. Both arenas have full jump courses that are changed weekly.
                         </p>
                         <p> For those not interested in jumping, we have a regulation dressage arena with a speaker system you can connect your phone to so you can practice your freestyle.
@@ -25,8 +25,8 @@ function About() {
                         </p>
                         <p>To highlight the key features of our facilities:
                         </p>
-                        <div class="row mt-3">
-                            <div class="col-md-6 key-features">
+                        <div className="row mt-3">
+                            <div className="col-md-6 key-features">
                                 <ul>
                                     <li>100x200 indoor arena</li>
                                     <li>200x300 outdoor arena</li>
@@ -41,7 +41,7 @@ function About() {
                                 </ul>
                             </div>
                         </div>
-                        <div class="row mt-3">
+                        <div className="row mt-3">
                             <p> We'd love to give you a tour of the facility and show what we have to offer you and your equine. Please navigate to the <Link to='/Contact' className='about-contact'>Contact Page</Link> to find out how to reach out to us and schedule a time!
                             </p>
                         </div>

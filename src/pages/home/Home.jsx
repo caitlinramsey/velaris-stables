@@ -1,21 +1,17 @@
 import './home.css'
 import background from '../../../images/svenhero.jpg'
 
-export default function Home() {
+function Home() {
     return (
         <>
             <div style={{
                 backgroundImage: `url(${background})`,
                 backgroundRepeat: 'no-repeat',
                 height: '100vh',
-                backgroundSize: '1300px',
+                backgroundSize: 'cover',
+                opacity: '.9',
+                position: 'relative',
             }}>
-                <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-                    <div class="container">
-                        <a class="navbar-brand" href="#"></a>
-                    </div>
-                </nav>
-
                 <section class="bgimage" id="home">
                     <div class="container-fluid">
                         <div class="row">
@@ -30,3 +26,5 @@ export default function Home() {
         </>
     );
 }
+
+export default Home;
