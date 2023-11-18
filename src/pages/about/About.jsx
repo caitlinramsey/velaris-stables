@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import './about.css';
+import fencing from '../../../images/fencing.jpg';
 
 function About() {
     return (
@@ -17,7 +18,7 @@ function About() {
                         </p>
                         <p> For those not interested in jumping, we have a regulation dressage arena with a speaker system you can connect your phone to so you can practice your freestyle.
                         </p>
-                        <p> Other amenities include a full cross country course with a water feature, miles of trails, a trail obstacle course, and a hot walker. 
+                        <p> Other amenities include a full cross country course with a water feature, miles of trails, a trail obstacle course, and a hot walker.
                         </p>
                         <p> Inside the barn, we have 12x12 and 14x14 matted stalls with automatic waterers. The barn has 8 grooming stalls as well as 2 H/C wash stalls with infrared heaters. We have 3 tack rooms; one for boarders, one for lessons, and one for our owner and trainers. The tack rooms are heated and air conditioned with furniture, a kitchenette, and a lovely view of the indoor arena. We also offer trailer parking on concrete with access to water to make it easy to wash your trailer.
                         </p>
@@ -41,13 +42,19 @@ function About() {
                                 </ul>
                             </div>
                         </div>
+                        <div style={{
+                            backgroundImage: `url(${fencing})`,
+                            backgroundRepeat: 'no-repeat',
+                            height: '30vh',
+                            backgroundSize: 'contain',
+                        }}></div>
                         <div className="row mt-3">
                             <p> We'd love to give you a tour of the facility and show what we have to offer you and your equine. Please navigate to the <Link to='/Contact' className='about-contact'>Contact Page</Link> to find out how to reach out to us and schedule a time!
                             </p>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
     )
 }

@@ -21,35 +21,35 @@ function Navigation() {
               <Nav.Link
                 href="/"
                 onClick={() => handlePageChange("Home")}
-                // className={currentPage === "Home" ? "active" : "nav-link"}
+                className={currentPage === "Home" ? "active" : "nav-link"}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 href="/About"
                 onClick={() => handlePageChange("About")}
-                // className={currentPage === "About" ? "active" : "nav-link"}
+                className={currentPage === "About" ? "active" : "nav-link"}
               >
                 About
               </Nav.Link>
               <Nav.Link
                 href="/Boarding"
                 onClick={() => handlePageChange("Boarding")}
-                // className={currentPage === "Boarding" ? "active" : "nav-link"}
+                className={currentPage === "Boarding" ? "active" : "nav-link"}
               >
                 Boarding
               </Nav.Link>
               <Nav.Link
                 href="/Lessons"
                 onClick={() => handlePageChange("Lessons")}
-                // className={currentPage === "Lessons" ? "active" : "nav-link"}
+                className={currentPage === "Lessons" ? "active" : "nav-link"}
               >
                 Lessons
               </Nav.Link>
               <Nav.Link
                 href="/Contact"
                 onClick={() => handlePageChange("Contact")}
-                // className={currentPage === "Contact" ? "active" : "nav-link"}
+                className={currentPage === "Contact" ? "active" : "nav-link"}
               >
                 Contact
               </Nav.Link>
