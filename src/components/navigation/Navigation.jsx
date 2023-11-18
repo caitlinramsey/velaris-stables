@@ -19,37 +19,37 @@ function Navigation() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto'>
               <Nav.Link
-                to="/"
+                href="/"
                 onClick={() => handlePageChange("Home")}
-                className={currentPage === "Home" ? "active" : "nav-link"}
+                // className={currentPage === "Home" ? "active" : "nav-link"}
               >
                 Home
               </Nav.Link>
               <Nav.Link
-                to="/About"
+                href="/About"
                 onClick={() => handlePageChange("About")}
-                className={currentPage === "About" ? "active" : "nav-link"}
+                // className={currentPage === "About" ? "active" : "nav-link"}
               >
                 About
               </Nav.Link>
               <Nav.Link
-                to="/Boarding"
+                href="/Boarding"
                 onClick={() => handlePageChange("Boarding")}
-                className={currentPage === "Boarding" ? "active" : "nav-link"}
+                // className={currentPage === "Boarding" ? "active" : "nav-link"}
               >
                 Boarding
               </Nav.Link>
               <Nav.Link
-                to="/Lessons"
+                href="/Lessons"
                 onClick={() => handlePageChange("Lessons")}
-                className={currentPage === "Lessons" ? "active" : "nav-link"}
+                // className={currentPage === "Lessons" ? "active" : "nav-link"}
               >
                 Lessons
               </Nav.Link>
               <Nav.Link
-                to="/Contact"
+                href="/Contact"
                 onClick={() => handlePageChange("Contact")}
-                className={currentPage === "Contact" ? "active" : "nav-link"}
+                // className={currentPage === "Contact" ? "active" : "nav-link"}
               >
                 Contact
               </Nav.Link>
