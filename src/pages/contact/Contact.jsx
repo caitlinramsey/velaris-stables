@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
       <section id="contact">
-        <h1 className="contact-us text-center">Contact Us</h1>
+        <h1 className="contact-us text-center pb-3">Contact Us</h1>
 
         <Container className="contact-container">
           <div className="contact-form">
@@ -55,11 +55,12 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
+              className="message mb-1"
               placeholder="Please enter your message here"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button className="contact-submit p-3" onClick={submit}>
+            <button className="contact-submit p-2" onClick={submit}>
               Submit
             </button>
             <span className="email-sent fs-5 fw-bold">

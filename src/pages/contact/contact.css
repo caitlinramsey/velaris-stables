@@ -1,0 +1,24 @@
+.name {
+    display: block;
+    margin: auto;
+}
+
+.email {
+    display: block;
+    margin: auto;
+}
+
+.message {
+    display: block;
+    margin: auto;
+}
+
+.contact-submit {
+    display: block;
+    margin: auto;
+    border-radius: .5rem;
+}
+
+.contact-submit:hover {
+
+}
