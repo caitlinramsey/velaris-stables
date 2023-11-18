@@ -2,13 +2,13 @@
     --picture-text: white;
 }
 /* hero background image */
-.bgimage {
+/* .bgimage {
     height: 100vh;
     background: url('images/svenhero.jpg');
     background-size: cover;
     position: relative;
     opacity: .9;
-}
+} */
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
