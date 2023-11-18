@@ -15,10 +15,6 @@ function Navigation() {
 
   return (
     <Navbar expand='lg' className="navigation p-2">
-      {/* <Navbar.Brand href='/' className='brand ps-3'>
-          <img src={navLogo} width='180px' alt="image of my logo" />
-          <h1 className="main-title">Velaris Stables</h1>
-      </Navbar.Brand> */}
       <Container className='nav-tabs fw-bold'>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
