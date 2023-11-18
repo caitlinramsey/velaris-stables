@@ -3,18 +3,18 @@ import './main.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './pages/home/Home';
-import About from './pages/about/About'
+import About from './pages/about/About.jsx'
 import Boarding from './pages/boarding/Boarding';
 import Lessons from './pages/lessons/Lessons';
 import Contact from './pages/contact/Contact';
 import reportWebVitals from './reportWebVitals';
-// import Error from '../src/components/error/Error'
+import Error from './components/error/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    // errorElement: <Error />,
+    errorElement: <Error />,
     children: [
       {
         index: true,

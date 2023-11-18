@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Navigation from './components/Nav/Nav';
+import Navigation from './components/nav/Nav';
 import Header from './components/header/Header';
 // import Footer from './components/footer/Footer'
 

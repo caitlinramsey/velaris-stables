@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
 // import navLogo from '../../../images/velaris.png'
 
 function Navigation() {
@@ -27,13 +26,13 @@ function Navigation() {
               >
                 Home
               </Nav.Link>
-              <Link
-                to="/About"
+              <Nav.Link
+                href="/About"
                 onClick={() => handlePageChange("About")}
                 className={currentPage === "About" ? "active" : "nav-link"}
               >
                 About
-              </Link>
+              </Nav.Link>
               <Nav.Link
                 href="/Boarding"
                 onClick={() => handlePageChange("Boarding")}
