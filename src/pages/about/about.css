@@ -1,0 +1,13 @@
+:root {
+    --about-contact: hotpink;
+}
+
+.key-features {
+    font-weight: bold;
+}
+
+.about-contact {
+    text-decoration: none;
+    color: var(--about-contact);
+    cursor: pointer;
+}

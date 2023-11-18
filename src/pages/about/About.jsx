@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './about.css';
 
 function About() {
@@ -25,7 +26,7 @@ function About() {
                         <p>To highlight the key features of our facilities:
                         </p>
                         <div class="row mt-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6 key-features">
                                 <ul>
                                     <li>100x200 indoor arena</li>
                                     <li>200x300 outdoor arena</li>
@@ -41,7 +42,7 @@ function About() {
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <p> We'd love to give you a tour of the facility and show what we have to offer you and your equine. Please navigate to the contact page to find out how to reach out to us and schedule a time!
+                            <p> We'd love to give you a tour of the facility and show what we have to offer you and your equine. Please navigate to the <Link to='/Contact' className='about-contact'>Contact Page</Link> to find out how to reach out to us and schedule a time!
                             </p>
                         </div>
                     </div>
