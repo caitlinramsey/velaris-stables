@@ -21,16 +21,12 @@
     font-weight: bold;
 }
 
-.self-care {
-    font-weight: bolder;
-}
-
-.full-care {
-    font-weight: bolder;
-}
-
+.self-care,
+.full-care,
 .training-care {
     font-weight: bolder;
+    text-decoration: underline;
+    text-underline-offset: .4rem;
 }
 
 .boarding-contact {

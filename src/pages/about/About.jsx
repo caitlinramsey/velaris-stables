@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import './about.css';
-import barnAisle from '../../../images/barn-aisle.jpeg';
+import barnExterior from '../../../images/barn-exterior.png';
 import outdoor from '../../../images/outdoor.png';
 import indoor from '../../../images/indoor.png';
 
@@ -13,7 +13,7 @@ function About() {
                 <div className="row mt-4">
                     <div className="col-lg-4 mt-4">
                         <div style={{
-                            backgroundImage: `url(${barnAisle})`,
+                            backgroundImage: `url(${barnExterior})`,
                             backgroundRepeat: 'no-repeat',
                             height: '30vh',
                             backgroundSize: 'contain',
