@@ -2,10 +2,6 @@
     --about-contact: black;
 }
 
-.key-features {
-    font-weight: bold;
-}
-
 .about-contact {
     text-decoration: underline;
     color: var(--about-contact);

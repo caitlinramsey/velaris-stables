@@ -27,19 +27,19 @@ function About() {
                         </p>
                         <p> Other amenities include a full cross country course with a water feature, miles of trails, a trail obstacle course, and a hot walker.
                         </p>
-                        <p> Inside the barn, we have 12'x12' and 14'x14' matted stalls with automatic waterers. The barn has 8 grooming stalls as well as 2 H/C wash stalls with infrared heaters. We have 3 tack rooms; one for boarders, one for lessons, and one for our owner and trainers. The tack rooms are heated and air conditioned with furniture, a kitchenette, and a lovely view of the indoor arena. We also offer trailer parking on concrete with access to water to make it easy to wash your trailer.
+                        <p> Inside the main barn, we have 12'x12' and 14'x14' matted stalls with automatic waterers. The barn has 8 grooming stalls as well as 2 H/C wash stalls with infrared heaters. We have 3 tack rooms; one for boarders, one for lessons, and one for our owner and trainers. The tack rooms are heated and air conditioned with furniture, a kitchenette, and a lovely view of the indoor arena. We also offer trailer parking on concrete with access to water to make it easy to wash your trailer.
                         </p>
                         <p> We will be offering a show series on site as well as clinics year round.
                         </p>
                     </div>
                     <div className="row mt-3">
-                        <p>To highlight the key features of our facility:
+                        <p>To highlight the <span className="fw-bold">key features</span> of our facility:
                         </p>
-                        <div className="col-md-3 key-features">
+                        <div className="col-md-3 key-features fw-bold">
                             <ul>
-                                <li>100'x200' indoor arena</li>
-                                <li>200'x300' outdoor arena</li>
-                                <li>20x60 meter dressage arena</li>
+                                <li>100' x 200' indoor arena</li>
+                                <li>200' x 300' outdoor arena</li>
+                                <li>20 x 60 meter dressage arena</li>
                                 <li>Full cross country course</li>
                                 <li>Miles of trails</li>
                                 <li>Trail obstacle course</li>
