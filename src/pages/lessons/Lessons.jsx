@@ -38,7 +38,7 @@ function Lessons() {
                         </div>
 
                         <h1 className="meet-trainers fw-bold"> Meet the Trainers</h1>
-                        <div className="col-lg-12 trainer-info">
+                        <div className="col-lg-10 trainer-info">
                             <div style={{
                                 backgroundImage: `url(${me})`,
                                 backgroundRepeat: 'no-repeat',
