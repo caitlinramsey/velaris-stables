@@ -1,3 +1,14 @@
+.navbar-brand {
+    display: flex;
+}
+
+.main-title {
+    align-items: center;
+    display: flex;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+
 .navbar-nav {
     margin: auto;
 }

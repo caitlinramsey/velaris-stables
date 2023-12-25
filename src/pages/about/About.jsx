@@ -49,7 +49,7 @@ function About() {
                                 <li>Shows and clinics onsite</li>
                             </ul>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 indoor">
                             <div style={{
                                 backgroundImage: `url(${indoor})`,
                                 backgroundRepeat: 'no-repeat',
@@ -58,6 +58,7 @@ function About() {
                                 backgroundSize: 'contain',
                             }}></div>
                         </div>
+                        
                         <div className="col-lg-4">
                         <div style={{
                             backgroundImage: `url(${outdoor})`,

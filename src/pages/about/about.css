@@ -1,5 +1,5 @@
 :root {
-    --about-contact: hotpink;
+    --about-contact: black;
 }
 
 .key-features {
@@ -7,7 +7,8 @@
 }
 
 .about-contact {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--about-contact);
     cursor: pointer;
+    font-weight: bolder;
 }
