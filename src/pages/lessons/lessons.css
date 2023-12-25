@@ -1,16 +1,38 @@
-.meet-trainers {
+.lesson-desc {
+    font-size: 19px;
+}
+
+.meet-trainers,
+#meet-our-horses {
     text-decoration: underline;
+}
+
+.lesson-pricing-section {
+    background-color: rgba(161, 161, 161, 0.8);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 40vw;
+    margin: auto;
+}
+
+.lesson-pricing {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    padding-bottom: 1rem;
+}
+
+.lesson-prices {
+    font-size: 1.3rem;
 }
 
 .trainer-info {
     margin: auto;
 }
 
-#meet-our-horses {
-    text-decoration: underline;
-}
-
-.lesson-image-container:hover .lesson-image-overlay {
+.lesson-image-container:hover .lesson-image-overlay,
+.lesson-image-container:active .lesson-image-overlay {
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
 }

@@ -18,7 +18,7 @@ function Lessons() {
                     <div className="col-lg-4">
                         <img src="images/lessons.jpg" className="imageLessonPage" alt="" />
                     </div>
-                    <div className="col-lg-12 text-center">
+                    <div className="lesson-desc col-lg-12 text-center">
                         <p> We offer lessons ranging from beginner to advanced in multiple disciplines. We offer lessons in hunters, jumpers, dressage, cross country, trail, and general western.
                         </p>
                         <div className="row mt-3">
@@ -27,8 +27,18 @@ function Lessons() {
                             <p>Don't have your own horse? No problem! We have a wide range of lovely lesson horses who can suit many different riders' needs.
                             </p>
                         </div>
+                        <div className="lesson-pricing-section">
+                            <h1 className="lesson-pricing fw-bold">Lesson Pricing</h1>
+                            <div className="lesson-prices">
+                                <p><span className="fw-bold">30</span> minute private lesson -- <span className="fw-bold">$40</span></p>
+                                <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
+                                <p><span className="fw-bold">1</span> hour private lesson -- <span className="fw-bold">$60</span></p>
+                                <p><span className="fw-bold">1</span> hour group lesson -- <span className="fw-bold">$50</span></p>
+                            </div>
+                        </div>
+
                         <h1 className="meet-trainers fw-bold"> Meet the Trainers</h1>
-                        <div className="col-lg-3 trainer-info">
+                        <div className="col-lg-12 trainer-info">
                             <div style={{
                                 backgroundImage: `url(${me})`,
                                 backgroundRepeat: 'no-repeat',
