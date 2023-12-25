@@ -1,5 +1,4 @@
 :root {
-    --boarding-about: hotpink;
     --links-text: black;
 }
 
@@ -9,9 +8,9 @@
 }
 
 .boarding-about {
-    text-decoration: none;
-    color: var(--boarding-about);
+    color: var(--links-text);
     cursor: pointer;
+    font-weight: bolder;
 }
 
 .boarding-about-text {
@@ -26,6 +25,22 @@
     font-weight: bold;
     color: var(--links-text);
 }
+
+.magical--underline {
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #f904cc 0%, rgb(125, 0, 142) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .1em;
+    background-position: 0 95%;
+    transition: background-size .25s linear, color .2s linear;
+    text-decoration: none;
+    padding: 2px;
+    &:hover {
+    color: #fff;
+      
+      background-size: 100% 95%;
+    }
+  }
 
 .self-care-title,
 .full-care-title,
@@ -42,7 +57,7 @@
 }
 
 .boarding-contact {
-    text-decoration: none;
-    color: var(--boarding-about);
+    color: var(--links-text);
     cursor: pointer;
+    font-weight: bolder;
 }

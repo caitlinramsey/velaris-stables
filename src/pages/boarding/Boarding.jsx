@@ -13,7 +13,7 @@ function Boarding() {
         <div className="row mt-4">
           <div className="col-lg-12 boarding-desc">
             <p>
-              We have three levels of boarding at Velaris Stables. We offer <a href="#self-care" className="self-text">self care</a>, <a href="#full-care" className="full-text">full care</a>, and <a href="#training-care" className="training-text">training board</a>. To learn more about our facilities, please visit the <Link to='/About' className="boarding-about"><span className="boarding-about-text">About</span></Link> page.
+              We have three levels of boarding at Velaris Stables. We offer <a href="#self-care" className="self-text"><span className="magical--underline">self care</span></a>, <a href="#full-care" className="full-text"><span className="magical--underline">full care</span></a>, and <a href="#training-care" className="training-text"><span className="magical--underline">training board</span></a>. To learn more about our facilities, please visit the <Link to='/About' className="boarding-about"><span className="boarding-about-text">About</span></Link> page.
             </p>
             <p>
               Inside the main barn, we have 12x12 and 14x14 matted stalls with automatic waterers. The barn has 8 grooming stalls as well as 2 H/C wash stalls with infrared heaters. We have 3 tack rooms; one for boarders, one for lessons, and one for our owner and trainers. The tack rooms are heated and air conditioned with furniture, a kitchenette, and a lovely view of the indoor arena. We also offer trailer parking on concrete with access to water to make it easy to wash your trailer.
