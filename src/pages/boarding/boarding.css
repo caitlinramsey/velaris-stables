@@ -1,9 +1,11 @@
 :root {
     --boarding-about: hotpink;
+    --links-text: black;
 }
 
 .boarding-desc {
     text-align: center;
+    font-size: 22px;
 }
 
 .boarding-about {
@@ -16,17 +18,27 @@
     display: inline;
 }
 
-.self-text, .full-text, .training-text {
+.self-text, 
+.full-text, 
+.training-text {
+    text-decoration: none;
     display: inline;
     font-weight: bold;
+    color: var(--links-text);
 }
 
-.self-care,
-.full-care,
-.training-care {
+.self-care-title,
+.full-care-title,
+.training-care-title {
     font-weight: bolder;
     text-decoration: underline;
-    text-underline-offset: .4rem;
+    text-underline-offset: .5rem;
+}
+
+.self-care-desc,
+.full-care-desc,
+.training-care-desc {
+    font-size: 1.1rem;
 }
 
 .boarding-contact {
