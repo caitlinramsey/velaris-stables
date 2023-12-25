@@ -1,3 +1,12 @@
+:root {
+    --background: #272727;
+    --active-text: black;
+}
+
+#header {
+    background-color: var(--background);
+}
+
 .navbar-brand {
     display: flex;
 }
@@ -22,4 +31,8 @@
     text-decoration: none;
     margin: auto;
     font-size: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--active-text);
 }
