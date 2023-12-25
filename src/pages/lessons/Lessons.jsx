@@ -1,32 +1,81 @@
+// lessons.js
 import React from "react";
 import './lessons.css';
+import me from '../../../images/me-hershey.jpg';
+import sven from '../../../images/lesson-horses/sven-front-no-halter.png';
+import hershey from '../../../images/lesson-horses/hershey.jpg';
+import benny from '../../../images/lesson-horses/benny.jpg';
+import freddie from '../../../images/lesson-horses/freddie.jpg';
+import zippy from '../../../images/lesson-horses/zippy.jpg';
+import linus from '../../../images/lesson-horses/linus.jpg';
 
 function Lessons() {
     return (
         <section id="lessons">
             <div className="container mt-4 pt-4">
-                <h1 className="text-center">Lessons at Velaris Stables</h1>
+                <h1 className="lessons fw-bold text-center">Lessons at Velaris Stables</h1>
                 <div className="row mt-4">
                     <div className="col-lg-4">
-                        <img src="images/lessons.jpg" class="imageLessonPage" alt=""></img>
+                        <img src="images/lessons.jpg" className="imageLessonPage" alt="" />
                     </div>
-
-                    <div className="col-lg-8">
+                    <div className="col-lg-12 text-center">
                         <p> We offer lessons ranging from beginner to advanced in multiple disciplines. We offer lessons in hunters, jumpers, dressage, cross country, trail, and general western.
                         </p>
-                        <p> Meet the Trainers:</p>
-                        <p>List of trainers here</p>
                         <div className="row mt-3">
-                            <p> In order to determine who you should work with and what your riding level is, we require an inital one-on-one lesson where one of our trainers can evaluate your riding ability. You will need to show up 15 minutes before your lesson in order to groom and tack up your horse.
+                            <p> In order to determine who you should work with and what your riding level is, we require an initial one-on-one lesson where one of our trainers can evaluate your riding ability. You will need to show up 15 minutes before your lesson to groom and tack up your horse.
                             </p>
-                            <p>Don't have your own horse? No problem! We have a wide range of lovely lessons horses who can suit many different rider's needs.</p>
+                            <p>Don't have your own horse? No problem! We have a wide range of lovely lesson horses who can suit many different riders' needs.
+                            </p>
+                        </div>
+                        <h1 className="meet-trainers fw-bold"> Meet the Trainers</h1>
+                        <div className="col-lg-3 trainer-info">
+                            <div style={{
+                                backgroundImage: `url(${me})`,
+                                backgroundRepeat: 'no-repeat',
+                                height: '30vh',
+                                backgroundSize: 'contain',
+                                backgroundPosition: 'center center',
+                                overflow: 'hidden',
+                                margin: '0 auto',
+                            }}></div>
+                            <h4 className="caitlin-ramsey">Caitlin Ramsey</h4>
+                            <p>Caitlin rode her first horse at 2 years old and started taking lessons at 6 years old. She has experience with hunters, jumpers, eventing, dressage, driving, and a small bit in reining.
+                            </p>
                         </div>
                     </div>
-                    <div id="lesson-horses">
-                        <h1 id="meet-our-horses" className="text-center">Meet Our Horses:</h1>
+                    <div id="lesson-horses" className="row text-center">
+                        <h1 id="meet-our-horses" className="text-center fw-bold col-12">Meet Our Horses</h1>
+
+                        {[
+                            { image: sven, name: 'Sven', description: 'Sven is a 3 year old, 13.3 hand, Norwegian Fjord gelding who is not part of the lesson program yet, but will be once he is old enough.' },
+                            { image: hershey, name: 'Hershey', description: 'Hershey is a 21 year old, 13.2 hand Welsh pony gelding. He loves jumpers and is very quick and handy.' },
+                            { image: benny, name: 'Benny', description: 'Benny is a 15 year old, 16 hand American Warmblood gelding. Benny is great for hunters, jumpers, and eventing. He is happy as long as there is a jump infront of him.' },
+                            { image: freddie, name: 'Freddie', description: 'Freddie is a Quarter Horse gelding who was a pony horse on the racetrack. He is loving his second career learning to jump.' },
+                            { image: zippy, name: 'Zippy', description: 'Zippy is a 15.2 hand, American Paint mare who has mainly done trail riding but is loving learning to jump and learning dressage.' },
+                            { image: linus, name: 'Linus', description: 'Linus is a 4 year old, 14 hand, Appaloosa gelding. He is still young and learning but is very safe and quiet.' },
+                        ].map((horse, index) => (
+                            <div className="col-lg-4 mb-4" key={index}>
+                                <div className="lesson-image-container" style={{
+                                    backgroundImage: `url(${horse.image})`,
+                                    backgroundRepeat: 'no-repeat',
+                                    height: '30vh',
+                                    backgroundSize: 'contain',
+                                    backgroundPosition: 'center',
+                                    overflow: 'hidden',
+                                    margin: '0 auto',
+                                    position: 'relative',
+                                    transition: '0.3s ease',
+                                }}>
+                                    <div className="lesson-image-overlay">
+                                        <h3 className="lesson-image-caption">{horse.name}</h3>
+                                        <h4 className="lesson-image-description">{horse.description}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
     )
 }
