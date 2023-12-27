@@ -2,6 +2,10 @@
     --about-contact: black;
 }
 
+#about {
+    font-family: 'Playpen Sans', cursive;
+}
+
 .about-contact {
     text-decoration: underline;
     color: var(--about-contact);

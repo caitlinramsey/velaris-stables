@@ -2,6 +2,10 @@
     --links-text: black;
 }
 
+#boarding {
+    font-family: 'Playpen Sans', cursive;
+}
+
 .boarding-desc {
     text-align: center;
     font-size: 22px;

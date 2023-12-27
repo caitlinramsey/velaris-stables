@@ -31,6 +31,7 @@
     text-decoration: none;
     margin: auto;
     font-size: 20px;
+    font-family: 'Playpen Sans', cursive;
 }
 
 .nav-tabs .nav-link.active {

@@ -6,9 +6,12 @@
 .hero_title {
     font-size: 4.5rem;
 }
+
 .hero_desc {
     font-size: 2rem;
+    font-family: 'Playpen Sans', cursive;
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -20,7 +23,7 @@
 
 .hero-text h2 {
     color: #fff;
-    font-family: monospace;
+    font-family: 'Playpen Sans', cursive;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -36,8 +39,32 @@
     to { width: 100% }
   }
 
-  /* @media screen and (max-width: 1200px) {
-    .hero-text h2 {
-        max-width: 70vw;
+  @media screen and (max-width: 1024px) {
+    .hero_title {
+        font-size: 3rem;
     }
-  } */
+
+    .hero_desc {
+        font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero_title {
+        font-size: 2.5rem;
+    }
+
+    .hero_desc {
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .hero_title {
+        font-size: 2rem;
+    }
+
+    .hero_desc {
+        font-size: 1rem;
+    }
+  }
