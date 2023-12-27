@@ -6,6 +6,12 @@
     font-family: 'Playpen Sans', cursive;
 }
 
+.about-desc,
+.key-features-title,
+.key-features {
+    font-size: 17px;
+}
+
 .about-contact {
     text-decoration: underline;
     color: var(--about-contact);
