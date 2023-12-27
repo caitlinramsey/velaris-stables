@@ -9,7 +9,7 @@ function About() {
     return (
         <section id="about">
             <div className="container mt-4 pt-4">
-                <h1 className="text-center">About Velaris Stables</h1>
+                <h1 className="text-center fw-bold">About Velaris Stables</h1>
                 <div className="row mt-4">
                     <div className="col-lg-4 mt-4">
                         <div style={{

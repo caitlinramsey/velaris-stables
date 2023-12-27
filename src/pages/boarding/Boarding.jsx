@@ -9,7 +9,7 @@ function Boarding() {
   return (
     <section id="boarding">
       <div className="container mt-4 pt-4">
-        <h1 className="text-center">Boarding at Velaris Stables</h1>
+        <h1 className="text-center fw-bold">Boarding at Velaris Stables</h1>
         <div className="row mt-4">
           <div className="col-lg-12 boarding-desc">
             <p>

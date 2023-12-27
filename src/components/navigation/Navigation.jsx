@@ -17,7 +17,7 @@ function Navigation() {
   return (
     <>
     <div id="header">
-      <Navbar.Brand href='/' className='brand ps-3'>
+      <Navbar.Brand href='/' className='brand'>
         <img src={navLogo} width='180px' alt="image of my logo" />
         <h1 className="main-title text-white">Velaris Stables</h1>
       </Navbar.Brand>
