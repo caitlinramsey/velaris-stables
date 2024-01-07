@@ -35,10 +35,29 @@
     color: var(--navbar) !important;
     text-decoration: none;
     margin: auto;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Playpen Sans', cursive;
 }
 
 .nav-tabs .nav-link.active {
     background-color: var(--active-text);
+}
+
+@media screen and (max-width: 425px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .nav-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 }

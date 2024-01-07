@@ -11,7 +11,7 @@ function About() {
             <div className="container mt-4 pt-4">
                 <h1 className="text-center text-black fw-bold bg-transparent">About Velaris Stables</h1>
                 <div className="row mt-4">
-                    <div className="col-lg-4 mt-4">
+                    <div className="barn-exterior-img col-lg-4 mt-4 text-center">
                         <div style={{
                             backgroundImage: `url(${barnExterior})`,
                             backgroundRepeat: 'no-repeat',
@@ -62,7 +62,7 @@ function About() {
                             }}></div>
                         </div>
                         
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 outdoor">
                         <div style={{
                             backgroundImage: `url(${outdoor})`,
                             backgroundRepeat: 'no-repeat',
@@ -79,7 +79,6 @@ function About() {
                     </div>
                 </div>
             </div>
-            {/* </div> */}
         </section>
     )
 }
