@@ -11,11 +11,13 @@
     display: flex;
 }
 
-.main-title {
+.nav-title {
     align-items: center;
     display: flex;
     font-size: 60px;
     font-family: 'Dancing Script', cursive;
+    text-transform: none;
+    background-color: transparent;
 }
 
 .navbar-nav {

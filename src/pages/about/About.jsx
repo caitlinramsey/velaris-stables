@@ -9,7 +9,7 @@ function About() {
     return (
         <section id="about">
             <div className="container mt-4 pt-4">
-                <h1 className="text-center fw-bold">About Velaris Stables</h1>
+                <h1 className="text-center text-black fw-bold bg-transparent">About Velaris Stables</h1>
                 <div className="row mt-4">
                     <div className="col-lg-4 mt-4">
                         <div style={{
@@ -21,13 +21,13 @@ function About() {
                     </div>
 
                     <div className="col-lg-8 about-desc">
-                        <p> Velaris Stables is a <span className="fw-bold">100</span> acre facility with some wonderful amenities for both you and your horse. The facility boasts a state of the art <span className="fw-bold">100'x200'</span> indoor arena with rubber footing as well as a <span className="fw-bold">200'x300'</span> outdoor arena with the same footing. Both arenas have full jump courses that are changed weekly have all weather footing.
+                        <p> Velaris Stables is a <span className="fw-bold">100</span> acre facility with some wonderful amenities for both you and your horse. The facility boasts a state of the art <span className="fw-bold">100' x 200'</span> indoor arena with rubber footing as well as a <span className="fw-bold">200' x 300'</span> outdoor arena with the same footing. Both arenas have full jump courses that are changed weekly have all weather footing.
                         </p>
                         <p> For those not interested in jumping, we have a regulation dressage arena with a speaker system you can connect your phone to so you can practice your freestyle.
                         </p>
                         <p> Other amenities include a full cross country course with a water feature, miles of trails, a covered <span className="fw-bold">80'</span> round pen with wooden sides, a trail obstacle course, and a hot walker.
                         </p>
-                        <p> Inside the main barn, we have <span className="fw-bold">12'x12'</span> and <span className="fw-bold">14'x14'</span> matted stalls with automatic waterers. The barn has <span className="fw-bold">8</span> grooming stalls as well as <span className="fw-bold">2</span> H/C wash stalls with infrared heaters. We have <span className="fw-bold">3</span> tack rooms; one for boarders, one for lessons, and one for our owner and trainers. The tack rooms are heated and air conditioned with furniture, a kitchenette, a bathroom, and a lovely view of the indoor arena. We also offer trailer parking on concrete with access to water to make it easy to wash your trailer.
+                        <p> Inside the main barn, we have <span className="fw-bold">12' x 12'</span> and <span className="fw-bold">14' x 14'</span> matted stalls with automatic waterers. The barn has <span className="fw-bold">8</span> grooming stalls as well as <span className="fw-bold">2</span> H/C wash stalls with infrared heaters. We have <span className="fw-bold">3</span> tack rooms; one for boarders, one for lessons, and one for our owner and trainers. The tack rooms are heated and air conditioned with furniture, a kitchenette, a bathroom, and a lovely view of the indoor arena. We also offer trailer parking on concrete with access to water to make it easy to wash your trailer.
                         </p>
                         <p> We will be offering a show series on site, hunter paces, and clinics year round.
                         </p>

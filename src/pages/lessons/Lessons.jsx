@@ -13,7 +13,7 @@ function Lessons() {
     return (
         <section id="lessons">
             <div className="container mt-4 pt-4">
-                <h1 className="lessons fw-bold text-center">Lessons at Velaris Stables</h1>
+                <h1 className="lessons fw-bold text-center text-black bg-transparent">Lessons at Velaris Stables</h1>
                 <div className="row mt-4">
                     <div className="col-lg-4">
                         <img src="images/lessons.jpg" className="imageLessonPage" alt="" />
@@ -28,7 +28,7 @@ function Lessons() {
                             </p>
                         </div>
                         <div className="lesson-pricing-section mb-4">
-                            <h1 className="lesson-pricing fw-bold">Lesson Pricing</h1>
+                            <h1 className="lesson-pricing fw-bold text-black bg-transparent">Lesson Pricing</h1>
                             <div className="lesson-prices">
                                 <p><span className="fw-bold">30</span> minute private lesson -- <span className="fw-bold">$40</span></p>
                                 <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
@@ -37,7 +37,7 @@ function Lessons() {
                             </div>
                         </div>
 
-                        <h1 className="meet-trainers fw-bold"> Meet the Trainers</h1>
+                        <h1 className="meet-trainers fs-1 fw-bold text-black bg-transparent"> Meet the Trainers</h1>
                         <div className="col-lg-8 trainer-info">
                             <div style={{
                                 backgroundImage: `url(${me})`,
@@ -54,7 +54,7 @@ function Lessons() {
                         </div>
                     </div>
                     <div id="lesson-horses" className="row text-center">
-                        <h1 id="meet-our-horses" className="text-center fw-bold col-12 pb-3">Meet Our Lesson Horses</h1>
+                        <h1 id="meet-our-horses" className="text-center fw-bold col-12 pb-3 text-black bg-transparent">Meet Our Lesson Horses</h1>
 
                         {[
                             { image: sven, name: 'Sven', description: 'Sven is a 3 year old, 13.3 hand, Norwegian Fjord gelding who is not part of the lesson program yet, but will be once he is old enough.' },

@@ -22,6 +22,7 @@
 }
 
 .lesson-pricing {
+    font-size: 2rem;
     text-decoration: underline;
     text-underline-offset: 10px;
     padding-bottom: 1rem;

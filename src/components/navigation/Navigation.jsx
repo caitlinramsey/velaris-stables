@@ -19,7 +19,7 @@ function Navigation() {
     <div id="header">
       <Navbar.Brand href='/' className='brand'>
         <img src={navLogo} width='180px' alt="image of my logo" />
-        <h1 className="main-title text-white">Velaris Stables</h1>
+        <h1 className="nav-title text-white">Velaris Stables</h1>
       </Navbar.Brand>
 
       <Navbar expand='lg' className="navigation-tabs p-2">
