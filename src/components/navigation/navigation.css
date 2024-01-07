@@ -1,6 +1,7 @@
 :root {
     --background: #272727;
     --active-text: black;
+    --toggler: white;
 }
 
 #header {
@@ -26,6 +27,8 @@
 
 .navbar-toggler {
     margin: auto;
+    background-color: var(--toggler);
+    margin-bottom: 1rem;
 }
 
 .nav-link {
