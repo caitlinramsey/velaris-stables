@@ -15,20 +15,26 @@
 .door {
     position: absolute;
     height: 100%;
-    width: 50%;
+    width: 37%;
     top: 0;
     transition: transform 1.2s ease-in-out;
     transform-origin: 0% 50%;
 }
 
 .left-door {
-    background-color: #3498db;
+    background-image: url('../../../../images/barn-doors-left.png');
     left: 0;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 .right-door {
-    background-color: #e74c3c;
+    background-image: url('../../../../images/barn-doors-right.png');
     right: 0;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 
 .double-door-container.open .left-door {
