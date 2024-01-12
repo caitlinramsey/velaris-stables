@@ -1,4 +1,5 @@
 import "./landing.css";
+import DoubleDoors from "./doors/DoubleDoors";
 
 function Landing() {
   return (
@@ -19,6 +20,7 @@ function Landing() {
             </div>
           </h1>
         </div>
+        <DoubleDoors />
         <div className="enter-container">
           <a className='button home-link pt-5' href="home" rel="noopener noreferrer">
             <div className="button__line"></div>
