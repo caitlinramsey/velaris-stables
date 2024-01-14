@@ -10,10 +10,11 @@ const DoubleDoors = () => {
 
             doors.forEach(door => {
                 door.addEventListener('transitioned', handleTransitionEnd);
-                door.classList.add('.transitioning');
+                door.classList.add('transitioning');
             });
 
             return () => {
+                const doors = document.querySelectorAll('.door');
                 doors.forEach(door => {
                     door.removeEventListener('transitioned', handleTransitionEnd);
                 });
@@ -31,7 +32,9 @@ const DoubleDoors = () => {
             door.classList.remove('transitioning');
         });
 
-        window.location.href = 'home';
+        setTimeout(() => {
+            window.location.href = 'home';
+        }, 3000);
     };
 
     return (
