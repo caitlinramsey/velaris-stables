@@ -21,15 +21,6 @@ function Landing() {
           </h1>
         </div>
         <DoubleDoors />
-        <div className="enter-container">
-          <a className='button home-link pt-5' href="home" rel="noopener noreferrer">
-            <div className="button__line"></div>
-            <div className="button__line"></div>
-            <span className="button__text">ENTER</span>
-            <div className="button__drow1"></div>
-            <div className="button__drow2"></div>
-          </a>
-        </div>
       </header>
     </div>
   );
