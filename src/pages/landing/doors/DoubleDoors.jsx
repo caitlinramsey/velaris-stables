@@ -1,29 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './doubledoors.css';
 
 const DoubleDoors = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        if (isOpen) {
-            const doors = document.querySelectorAll('.door');
-
-            doors.forEach(door => {
-                door.addEventListener('transitioned', handleTransitionEnd);
-                door.classList.add('transitioning');
-            });
-
-            return () => {
-                const doors = document.querySelectorAll('.door');
-                doors.forEach(door => {
-                    door.removeEventListener('transitioned', handleTransitionEnd);
-                });
-            };
-        }
-    }, [isOpen]);
+    const timeoutRef = useRef(null);
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
+
+        if (!isOpen) {
+            const doors = document.querySelectorAll('.door');
+
+            doors.forEach(door => {
+                door.addEventListener('transitionend', handleTransitionEnd);
+            });
+
+            timeoutRef.current = setTimeout(() => {
+                doors.forEach(door => {
+                    door.classList.remove('transitioning');
+                });
+
+                window.location.href = 'home';
+            }, 2000);
+        }
     };
 
     const handleTransitionEnd = () => {
@@ -31,11 +30,18 @@ const DoubleDoors = () => {
         doors.forEach(door => {
             door.classList.remove('transitioning');
         });
-
-        setTimeout(() => {
-            window.location.href = 'home';
-        }, 3000);
     };
+
+    useEffect(() => {
+        return () => {
+            const doors = document.querySelectorAll('.door');
+            doors.forEach(door => {
+                door.removeEventListener('transitionend', handleTransitionEnd);
+            });
+
+            clearTimeout(timeoutRef.current);
+        };
+    }, [isOpen]);
 
     return (
         <div className={`double-door-container ${isOpen ? 'open' : ''}`}>
