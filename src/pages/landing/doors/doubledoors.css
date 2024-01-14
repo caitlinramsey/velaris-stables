@@ -13,8 +13,12 @@
     height: 100%;
     width: 37%;
     top: 0;
-    transition: transform 2s;
+    transition: transform 3s ease-in-out;
     transform-origin: 0% 50%;
+}
+
+.door.transitioning {
+    transform: translateX(100%);
 }
 
 .left-door {
