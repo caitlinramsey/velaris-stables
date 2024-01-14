@@ -1,11 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './doubledoors.css';
 
 const DoubleDoors = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    useEffect(() => {
+        if (isOpen) {
+            const doors = document.querySelectorAll('.door');
+
+            doors.forEach(door => {
+                door.addEventListener('transitioned', handleTransitionEnd);
+                door.classList.add('.transitioning');
+            });
+
+            return () => {
+                doors.forEach(door => {
+                    door.removeEventListener('transitioned', handleTransitionEnd);
+                });
+            };
+        }
+    }, [isOpen]);
+
     const handleToggle = () => {
         setIsOpen(!isOpen);
+    };
+
+    const handleTransitionEnd = () => {
+        const doors = document.querySelectorAll('.door');
+        doors.forEach(door => {
+            door.classList.remove('transitioning');
+        });
+
+        window.location.href = 'home';
     };
 
     return (
