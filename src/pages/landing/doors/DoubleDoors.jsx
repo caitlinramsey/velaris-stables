@@ -12,7 +12,7 @@ const DoubleDoors = () => {
             const doors = document.querySelectorAll('.door');
 
             doors.forEach(door => {
-                door.addEventListener('transitionend', handleTransitionEnd);
+                door.addEventListener('transitioned', handleTransitionEnd);
             });
 
             timeoutRef.current = setTimeout(() => {
@@ -36,7 +36,7 @@ const DoubleDoors = () => {
         return () => {
             const doors = document.querySelectorAll('.door');
             doors.forEach(door => {
-                door.removeEventListener('transitionend', handleTransitionEnd);
+                door.removeEventListener('transitioned', handleTransitionEnd);
             });
 
             clearTimeout(timeoutRef.current);
