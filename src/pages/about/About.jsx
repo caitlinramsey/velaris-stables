@@ -4,6 +4,8 @@ import './about.css';
 import barnExterior from '../../../images/barn-exterior.png';
 import outdoor from '../../../images/outdoor.png';
 import indoor from '../../../images/indoor.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHorseHead } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
     return (
@@ -36,20 +38,51 @@ function About() {
                     <div className="row mt-3 key-features-title">
                         <p>To highlight the <span className="fw-bold">key features</span> of our facility:
                         </p>
-                        <div className="col-md-3 key-features fw-bold">
-                            <ul>
-                                <li>100' x 200' indoor arena</li>
-                                <li>200' x 300' outdoor arena</li>
-                                <li>20 x 60 meter dressage arena</li>
-                                <li>Full cross country course</li>
-                                <li>Covered round pen</li>
-                                <li>Miles of trails</li>
-                                <li>Trail obstacle course</li>
-                                <li>H/C wash stalls</li>
-                                <li>Heated and AC tack rooms</li>
-                                <li>Trailer parking</li>
-                                <li>Shows and clinics onsite</li>
-                                <li>Hot walker</li>
+                        <div className="col-md-3 key-features">
+                            <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}100' x 200' indoor arena
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}200' x 300' outdoor arena
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}20 x 60 meter dressage arena
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Full cross country course
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Covered round pen
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Miles of trails
+
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Trail obstacle course
+
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}H/C wash stalls
+
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Heated and AC tack rooms
+
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Trailer parking
+
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Shows and clinics onsite
+
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon icon={faHorseHead} />{' '}Hot walker
+
+                                </li>
                             </ul>
                         </div>
                         <div className="col-lg-4 indoor">
@@ -61,16 +94,16 @@ function About() {
                                 backgroundSize: 'contain',
                             }}></div>
                         </div>
-                        
+
                         <div className="col-lg-4 outdoor">
-                        <div style={{
-                            backgroundImage: `url(${outdoor})`,
-                            backgroundRepeat: 'no-repeat',
-                            height: '30vh',
-                            width: '40vw',
-                            backgroundSize: 'contain',
-                        }}></div>
-                    </div>
+                            <div style={{
+                                backgroundImage: `url(${outdoor})`,
+                                backgroundRepeat: 'no-repeat',
+                                height: '30vh',
+                                width: '40vw',
+                                backgroundSize: 'contain',
+                            }}></div>
+                        </div>
                     </div>
                     <hr style={{ border: '2px solid black', margin: '20px 0' }} />
                     <div className="row mt-3 text-center fs-4">
