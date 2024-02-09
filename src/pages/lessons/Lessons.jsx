@@ -36,7 +36,7 @@ function Lessons() {
                             </p>
                         </div>
                         <div className="question-section">
-                            <div className="lesson-pricing-section mb-4">
+                            <div className="lesson-pricing-section mt-4 mb-4">
                                 <div className="d-flex justify-content-between align-items-center">
                                     <button className="btn btn-link lesson-pricing-btn" onClick={togglePricing}>
                                         {isPricingExpanded ? '-' : '+'}
