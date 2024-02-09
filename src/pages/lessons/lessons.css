@@ -37,6 +37,7 @@
 .own-horse {
     font-size: 2rem;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .lesson-pricing-btn,
@@ -46,7 +47,8 @@
     color: var(--lesson-plus);
 }
 
-.lesson-pricing-btn:hover {
+.lesson-pricing-btn:hover,
+.own-horse-btn:hover {
     color: var(--lesson-plus);
     transform: scale(1.5);
 }

@@ -41,7 +41,7 @@ function Lessons() {
                                     <button className="btn btn-link lesson-pricing-btn" onClick={togglePricing}>
                                         {isPricingExpanded ? '-' : '+'}
                                     </button>
-                                    <h1 className="lesson-pricing fw-bold text-black bg-transparent">Lesson Pricing</h1>
+                                    <h1 className="lesson-pricing text-black bg-transparent">Lesson Pricing</h1>
                                 </div>
                                 {isPricingExpanded && (
                                     <div className="lesson-prices">
@@ -57,7 +57,7 @@ function Lessons() {
                                     <button className="btn btn-link own-horse-btn" onClick={toggleOwnHorse}>
                                         {isOwnHorseExpanded ? '-' : '+'}
                                     </button>
-                                    <h1 className="own-horse fw-bold text-black bg-transparent">Do I need my own horse?</h1>
+                                    <h1 className="own-horse text-black bg-transparent">Do I need my own horse?</h1>
                                 </div>
                                 {isOwnHorseExpanded && (
                                     <div className="own-horse-question">
