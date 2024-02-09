@@ -42,8 +42,8 @@ function Lessons() {
                             {isPricingExpanded && (
                                 <div className="lesson-prices">
                                     <p><span className="fw-bold">30</span> minute private lesson -- <span className="fw-bold">$40</span></p>
-                                    <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
                                     <p><span className="fw-bold">1</span> hour private lesson -- <span className="fw-bold">$60</span></p>
+                                    <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
                                     <p><span className="fw-bold">1</span> hour group lesson -- <span className="fw-bold">$50</span></p>
                                 </div>
                             )}
@@ -69,7 +69,7 @@ function Lessons() {
                         <h1 className="text-center fs-1 fw-bold col-12 pb-3 text-black bg-transparent meet-our-horses">Meet Our Lesson Horses</h1>
 
                         {[
-                            { image: sven, name: 'Sven', description: 'Sven is a 3 year old, 13.3 hand, Norwegian Fjord gelding who is not part of the lesson program yet, but will be once he is old enough.' },
+                            { image: sven, name: 'Sven', description: 'Sven is a 3.5 year old, 13.3 hand, Norwegian Fjord gelding who is not part of the lesson program yet, but will be once he is old enough.' },
                             { image: hershey, name: 'Hershey', description: 'Hershey is a 21 year old, 13.2 hand Welsh pony gelding. He loves jumpers and is very quick and handy.' },
                             { image: bennyXc, name: 'Benny', description: 'Benny is a 15 year old, 16 hand American Warmblood gelding. Benny is great for hunters, jumpers, and eventing. He is happy as long as there is a jump infront of him.' },
                             { image: freddie, name: 'Freddie', description: 'Freddie is a Quarter Horse gelding who was a pony horse on the racetrack. He is loving his second career learning to jump.' },
