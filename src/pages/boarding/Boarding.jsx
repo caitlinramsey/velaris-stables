@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import './boarding.css';
-import selfCare from '../../../images/self-care-barn.jpg';
+import selfCare from '../../../images/self-care-barn.jpeg';
 import fullCare from '../../../images/full-care-board.jpeg';
 import trainingCare from '../../../images/training-board.jpg';
 
@@ -23,16 +23,16 @@ function Boarding() {
           <hr style={{ border: '2px solid black', margin: '20px 0' }} />
 
           <div className="row mt-3">
-            <div className="col-lg-3">
+            <div className="col-lg-6">
               <div style={{
                 backgroundImage: `url(${selfCare})`,
                 backgroundRepeat: 'no-repeat',
-                height: '30vh',
+                height: '60vh',
                 backgroundSize: 'contain',
               }}></div>
             </div>
 
-            <div className="col-lg-8 text-center mt-4">
+            <div className="col-lg-6 text-center mt-4">
               <h2 id="self-care" className="self-care-title"> Self Care Boarding
               </h2>
               <h4>$400/month</h4>
@@ -45,7 +45,7 @@ function Boarding() {
           <hr style={{ border: '2px solid black', margin: '20px 0' }} />
 
           <div className="row mt-3">
-            <div className="col-lg-8 text-center mt-5">
+            <div className="col-lg-6 text-center mt-5">
               <h2 id="full-care" className="full-care-title"> Full Care Boarding
               </h2>
               <h4>$650/month</h4>
@@ -53,11 +53,11 @@ function Boarding() {
                 For full care boarding, we have a 30 stall barn with multiple tack rooms, 8 grooming stalls, 4 H/C wash stalls and pastures attached. This barn contains the indoor arena so there is easy access to that as well as to the outdoor. We will take care of hay, grain, and shavings for your horse. Stalls will be cleaned daily or twice daily if horses are in. We take care of all feeding, watering, turning in/out, blanketing/unblanketing, fly protection, and basic wound care.
               </p>
             </div>
-            <div className="col-lg-3 mt-5">
+            <div className="col-lg-6 mt-5">
               <div style={{
                 backgroundImage: `url(${fullCare})`,
                 backgroundRepeat: 'no-repeat',
-                height: '30vh',
+                height: '60vh',
                 backgroundSize: 'contain',
               }}></div>
             </div>
@@ -66,16 +66,16 @@ function Boarding() {
           <hr style={{ border: '2px solid black', margin: '20px 0' }} />
 
           <div className="row mt-3">
-            <div className="col-lg-3 mb-5">
+            <div className="col-lg-6 mb-5">
               <div style={{
                 backgroundImage: `url(${trainingCare})`,
                 backgroundRepeat: 'no-repeat',
-                height: '30vh',
+                height: '60vh',
                 backgroundSize: 'contain',
               }}></div>
             </div>
 
-            <div className="col-lg-8 text-center mt-5">
+            <div className="col-lg-6 text-center mt-5">
               <h2 id="training-care" className="training-care-title"> Training Board
               </h2>
               <h4>$800/month</h4>
