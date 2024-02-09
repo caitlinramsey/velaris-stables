@@ -10,9 +10,14 @@ import bennyXc from '../../../images/lesson-horses/benny-xc.jpg';
 
 function Lessons() {
     const [isPricingExpanded, setPricingExpanded] = useState(false);
+    const [isOwnHorseExpanded, setOwnHorseExpanded] = useState(false);
 
     const togglePricing = () => {
         setPricingExpanded(!isPricingExpanded);
+    };
+
+    const toggleOwnHorse = () => {
+        setOwnHorseExpanded(!isOwnHorseExpanded);
     };
 
     return (
@@ -27,26 +32,39 @@ function Lessons() {
                         <p> We offer lessons ranging from beginner to advanced in multiple disciplines. We offer lessons in hunters, jumpers, dressage, cross country, trail, and general western.
                         </p>
                         <div className="row mt-3 mb-4">
-                            <p> In order to determine who you should work with and what your riding level is, we require an initial one-on-one lesson where one of our trainers can evaluate your riding ability. You will need to show up 15 minutes before your lesson to groom and tack up your horse.
-                            </p>
-                            <p>Don't have your own horse? No problem! We have a wide range of lovely lesson horses who can suit many different riders' needs.
+                            <p> In order to determine who you should work with and what your riding level is, we require an initial one-on-one lesson where one of our trainers can evaluate your riding ability. You will need to show up <span className="fw-bold text-decoration-underline">15</span> minutes before your lesson to groom and tack up your horse.
                             </p>
                         </div>
-                        <div className="lesson-pricing-section mb-4">
-                            <div className="d-flex justify-content-between align-items-center">
-                                <button className="btn btn-link lesson-pricing-btn" onClick={togglePricing}>
-                                    {isPricingExpanded ? '-' : '+'}
-                                </button>
-                                <h1 className="lesson-pricing fw-bold text-black bg-transparent">Lesson Pricing</h1>
-                            </div>
-                            {isPricingExpanded && (
-                                <div className="lesson-prices">
-                                    <p><span className="fw-bold">30</span> minute private lesson -- <span className="fw-bold">$40</span></p>
-                                    <p><span className="fw-bold">1</span> hour private lesson -- <span className="fw-bold">$60</span></p>
-                                    <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
-                                    <p><span className="fw-bold">1</span> hour group lesson -- <span className="fw-bold">$50</span></p>
+                        <div className="question-section">
+                            <div className="lesson-pricing-section mb-4">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <button className="btn btn-link lesson-pricing-btn" onClick={togglePricing}>
+                                        {isPricingExpanded ? '-' : '+'}
+                                    </button>
+                                    <h1 className="lesson-pricing fw-bold text-black bg-transparent">Lesson Pricing</h1>
                                 </div>
-                            )}
+                                {isPricingExpanded && (
+                                    <div className="lesson-prices">
+                                        <p><span className="fw-bold">30</span> minute private lesson -- <span className="fw-bold">$40</span></p>
+                                        <p><span className="fw-bold">1</span> hour private lesson -- <span className="fw-bold">$60</span></p>
+                                        <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
+                                        <p><span className="fw-bold">1</span> hour group lesson -- <span className="fw-bold">$50</span></p>
+                                    </div>
+                                )}
+                            </div>
+                            <div className="own-horse-section mb-4">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <button className="btn btn-link own-horse-btn" onClick={toggleOwnHorse}>
+                                        {isOwnHorseExpanded ? '-' : '+'}
+                                    </button>
+                                    <h1 className="own-horse fw-bold text-black bg-transparent">Do I need my own horse?</h1>
+                                </div>
+                                {isOwnHorseExpanded && (
+                                    <div className="own-horse-question">
+                                        <p className="own-horse-desc">Nope! We have a wide range of wonderful lessons horses that can accommodate you! From dressage to jumping to western, we have it all.</p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
 
                         <h1 className="meet-trainers fs-1 fw-bold text-black bg-transparent"> Meet the Trainers</h1>
