@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import './about.css';
-import barnExterior from '../../../images/barn-exterior.png';
+import barnExterior from '../../../images/barn-exterior.jpeg';
 import outdoor from '../../../images/outdoor.png';
 import indoor from '../../../images/indoor.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,16 +13,16 @@ function About() {
             <div className="container mt-4 pt-4">
                 <h1 className="text-center text-black fw-bold bg-transparent">About Velaris Stables</h1>
                 <div className="row mt-4">
-                    <div className="barn-exterior-img col-lg-4 mt-4 text-center">
+                    <div className="barn-exterior-img col-lg-6 text-center">
                         <div style={{
                             backgroundImage: `url(${barnExterior})`,
                             backgroundRepeat: 'no-repeat',
-                            height: '30vh',
+                            height: '50vh',
                             backgroundSize: 'contain',
                         }}></div>
                     </div>
 
-                    <div className="col-lg-8 about-desc">
+                    <div className="col-lg-6 about-desc">
                         <p> Velaris Stables is a <span className="fw-bold">100</span> acre facility with some wonderful amenities for both you and your horse. The facility boasts a state of the art <span className="fw-bold">100' x 200'</span> indoor arena with rubber footing as well as a <span className="fw-bold">200' x 300'</span> outdoor arena with the same footing. Both arenas have full jump courses that are changed weekly have all weather footing.
                         </p>
                         <p> For those not interested in jumping, we have a regulation dressage arena with a speaker system you can connect your phone to so you can practice your freestyle.
