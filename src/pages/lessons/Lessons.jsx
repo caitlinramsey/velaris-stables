@@ -1,5 +1,4 @@
-// lessons.js
-import React from "react";
+import React, { useState } from "react";
 import './lessons.css';
 import me from '../../../images/me-hershey.jpg';
 import sven from '../../../images/lesson-horses/sven-front-no-halter.png';
@@ -10,6 +9,12 @@ import linus from '../../../images/lesson-horses/linus.jpg';
 import bennyXc from '../../../images/lesson-horses/benny-xc.jpg';
 
 function Lessons() {
+    const [isPricingExpanded, setPricingExpanded] = useState(false);
+
+    const togglePricing = () => {
+        setPricingExpanded(!isPricingExpanded);
+    };
+
     return (
         <section id="lessons">
             <div className="container mt-4 pt-4">
@@ -28,13 +33,20 @@ function Lessons() {
                             </p>
                         </div>
                         <div className="lesson-pricing-section mb-4">
-                            <h1 className="lesson-pricing fw-bold text-black bg-transparent">Lesson Pricing</h1>
-                            <div className="lesson-prices">
-                                <p><span className="fw-bold">30</span> minute private lesson -- <span className="fw-bold">$40</span></p>
-                                <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
-                                <p><span className="fw-bold">1</span> hour private lesson -- <span className="fw-bold">$60</span></p>
-                                <p><span className="fw-bold">1</span> hour group lesson -- <span className="fw-bold">$50</span></p>
+                            <div className="d-flex justify-content-between align-items-center">
+                                <button className="btn btn-link lesson-pricing-btn" onClick={togglePricing}>
+                                    {isPricingExpanded ? '-' : '+'}
+                                </button>
+                                <h1 className="lesson-pricing fw-bold text-black bg-transparent">Lesson Pricing</h1>
                             </div>
+                            {isPricingExpanded && (
+                                <div className="lesson-prices">
+                                    <p><span className="fw-bold">30</span> minute private lesson -- <span className="fw-bold">$40</span></p>
+                                    <p><span className="fw-bold">30</span> minute group lesson -- <span className="fw-bold">$30</span></p>
+                                    <p><span className="fw-bold">1</span> hour private lesson -- <span className="fw-bold">$60</span></p>
+                                    <p><span className="fw-bold">1</span> hour group lesson -- <span className="fw-bold">$50</span></p>
+                                </div>
+                            )}
                         </div>
 
                         <h1 className="meet-trainers fs-1 fw-bold text-black bg-transparent"> Meet the Trainers</h1>
@@ -54,7 +66,7 @@ function Lessons() {
                         </div>
                     </div>
                     <div id="lesson-horses" className="row text-center">
-                        <h1 id="meet-our-horses" className="text-center fw-bold col-12 pb-3 text-black bg-transparent">Meet Our Lesson Horses</h1>
+                        <h1 className="text-center fs-1 fw-bold col-12 pb-3 text-black bg-transparent meet-our-horses">Meet Our Lesson Horses</h1>
 
                         {[
                             { image: sven, name: 'Sven', description: 'Sven is a 3 year old, 13.3 hand, Norwegian Fjord gelding who is not part of the lesson program yet, but will be once he is old enough.' },

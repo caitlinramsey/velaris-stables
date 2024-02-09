@@ -1,3 +1,7 @@
+:root {
+    --lesson-plus: black;
+}
+
 #lessons {
     font-family: 'Playpen Sans', cursive;
 }
@@ -7,25 +11,37 @@
 }
 
 .meet-trainers,
-#meet-our-horses {
+.meet-our-horses {
     text-decoration: underline;
 }
 
 .lesson-pricing-section {
-    background-color: rgba(161, 161, 161, 0.8);
     padding: 20px;
     border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 1rem;
     width: 40vw;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lesson-pricing {
     font-size: 2rem;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.lesson-pricing-btn {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--lesson-plus);
+}
+
+.lesson-pricing-btn:hover {
+    color: var(--lesson-plus);
+    transform: scale(1.5);
 }
 
 .lesson-prices {
