@@ -7,7 +7,6 @@ import About from './pages/about/About';
 import Boarding from './pages/boarding/Boarding';
 import Lessons from './pages/lessons/Lessons';
 import Contact from './pages/contact/Contact';
-import Landing from './pages/landing/Landing.jsx';
 import reportWebVitals from './reportWebVitals';
 import Error from './components/error/Error';
 
@@ -19,10 +18,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Landing />,
-      },
-      {
-        path: '/home',
         element: <Home />,
       },
       {
