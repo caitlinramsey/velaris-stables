@@ -1,5 +1,10 @@
+:root {
+    --contact-bg: #ffc4d6;
+}
+
 #contact {
     font-family: 'Playpen Sans', cursive;
+    background-color: var(--contact-bg);
 }
 
 .name {

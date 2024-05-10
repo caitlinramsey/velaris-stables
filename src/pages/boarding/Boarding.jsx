@@ -8,7 +8,7 @@ import trainingCare from '../../../images/training-board.jpg';
 function Boarding() {
   return (
     <section id="boarding">
-      <div className="container mt-4 pt-4">
+      <div className="container pt-4">
         <h1 className="text-center text-black fw-bold bg-transparent">Boarding at Velaris Stables</h1>
         <div className="row mt-4">
           <div className="col-lg-12 boarding-desc">

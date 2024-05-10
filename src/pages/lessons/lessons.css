@@ -1,9 +1,11 @@
 :root {
     --lesson-plus: black;
+    --contact-bg: #ffc4d6;
 }
 
 #lessons {
     font-family: 'Playpen Sans', cursive;
+    background-color: var(--contact-bg);
 }
 
 .lesson-desc {

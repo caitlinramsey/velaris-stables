@@ -35,7 +35,7 @@ function About() {
                         </p>
                     </div>
                     <hr style={{ border: '2px solid black', margin: '20px 0' }} />
-                    <div className="row mt-3 key-features-title">
+                    <div className="row mt-3 p-4 key-features-title">
                         <p>To highlight the <span className="fw-bold">key features</span> of our facility:
                         </p>
                         <div className="col-md-3 key-features">

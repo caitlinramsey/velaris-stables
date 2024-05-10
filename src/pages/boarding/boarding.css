@@ -1,9 +1,11 @@
 :root {
     --links-text: black;
+    --boarding-bg: #ffc4d6;
 }
 
 #boarding {
     font-family: 'Playpen Sans', cursive;
+    background-color: var(--boarding-bg);
 }
 
 .boarding-desc {

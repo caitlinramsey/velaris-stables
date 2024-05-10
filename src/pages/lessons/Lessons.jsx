@@ -22,7 +22,7 @@ function Lessons() {
 
     return (
         <section id="lessons">
-            <div className="container mt-4 pt-4">
+            <div className="container pt-4">
                 <h1 className="lessons fw-bold text-center text-black bg-transparent">Lessons at Velaris Stables</h1>
                 <div className="row mt-4">
                     <div className="col-lg-4">
