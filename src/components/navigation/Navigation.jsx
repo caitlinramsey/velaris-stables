@@ -28,7 +28,7 @@ function Navigation() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto text-white'>
               <Nav.Link
-                href="/home"
+                href="/"
                 onClick={() => handlePageChange("Home")}
                 className={currentPage === "Home" ? "active" : "nav-link"}
               >

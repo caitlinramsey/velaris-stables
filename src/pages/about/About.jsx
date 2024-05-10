@@ -10,8 +10,8 @@ import { faHorseHead } from '@fortawesome/free-solid-svg-icons';
 function About() {
     return (
         <section id="about">
-            <div className="container mt-4 pt-4">
-                <h1 className="text-center text-black fw-bold bg-transparent">About Velaris Stables</h1>
+            <div className="container pt-4">
+                <h1 className="text-center text-black fw-bold">About Velaris Stables</h1>
                 <div className="row mt-4">
                     <div className="barn-exterior-img col-lg-6 text-center">
                         <div style={{

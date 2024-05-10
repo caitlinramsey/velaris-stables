@@ -1,15 +1,22 @@
 :root {
     --about-contact: black;
+    --about-desc: #ffc4d6;
+    --key-features: #ff87ab;
 }
 
 #about {
     font-family: 'Playpen Sans', cursive;
+    background-color: var(--about-desc);
 }
 
 .about-desc,
 .key-features-title,
 .key-features {
     font-size: 17px;
+}
+
+.key-features-title {
+    background-color: var(--key-features);
 }
 
 .about-contact {
