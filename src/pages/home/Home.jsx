@@ -1,5 +1,5 @@
 import './home.css'
-import background from '../../../images/sven-right-no-halter.png'
+import background from '../../../images/sven-looking-left.jpg'
 
 function Home() {
     return (
